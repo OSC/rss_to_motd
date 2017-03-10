@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://www.osc.edu/feeds/known-issues.xml?field_issue_resolution_value=0">
+<channel>
+<title>Known Issues</title>
+<link>https://www.osc.edu/feeds/known-issues.xml?field_issue_resolution_value=0</link>
+<description/>
+<language>en</language>
+
+<item>
+<title>CRITICAL CHANGE FOR USING $PFSDIR DIRECTORY AT OSC</title>
+<link>https://www.osc.edu/supercomputing/known-issues/critical_change_about_using_pfsdir_directory_at_osc</link>
+<description>We have made a critical change in how our scratch filesystem works when you
+are using it as part of a batch job. If you use the $PFSDIR variable in your job
+scripts or job set up, then this change will apply to you. To fix an ongoing
+error with the batch environment, we have disabled the automatic
+creation of job directories on the scratch filesystem that used to be part of
+the $PFSDIR prologue. You can continue to use scratch in this way, but you
+will have to include this explicitly in your job script. Details on how to do
+this are included in the known issue documentation.
+See: http://bit.ly/2l1jaUY
+If you have any questions, please contact oschelp@osc.edu</description>
+<pubDate>Thu, 2 Feb 2017 12:00:00 +0000</pubDate>
+<dc:creator>kschooley</dc:creator>
+<guid isPermaLink="false">4076 at https://www.osc.edu</guid>
+</item>
+
+<item>
+<title>SCRATCH SYSTEM FILE DELETION POLICY IN EFFECT STARTING FEB. 1</title>
+<link>https://www.osc.edu/supercomputing/storage-environment-at-osc/available-file-systems</link>
+<description>Since we upgraded our Scratch file system we have not enforced our
+180 day file deletion policy. We will begin enforcing this policy starting
+February 1. It is important to keep in mind that the scratch file system is
+for temporary storage WITHOUT backup service. If you accidentally delete
+a file, old files are purged, or the filesystem crashes, they cannot be
+restored. Please move your important files to either your home directory
+or project space file system. More information can be found here:
+http://bit.ly/2kbz7LW</description>
+<pubDate>Mon, 23 Jan 2017 12:00:00 +0000</pubDate>
+<dc:creator>kschooley</dc:creator>
+<guid isPermaLink="false">4076 at https://www.osc.edu</guid>
+</item>
+
+
+
+<item>
+<title>TRY ONDEMAND, OSC'S WEB PORTAL</title>
+<link>https://www.osc.edu/resources/online_portals/ondemand</link>
+<description>Our app-based web portal, OnDemand, is at ondemand.osc.edu, you can:
+* Access and manage all your files
+* Get terminal access for any of our clusters in a browser window
+* Create and submit jobs with our Job Constructor
+* Access our resources in a virtual desktop environment</description>
+<pubDate>Mon, 23 Jan 2017 12:00:00 +0000</pubDate>
+<dc:creator>kschooley</dc:creator>
+<guid isPermaLink="false">4076 at https://www.osc.edu</guid>
+</item>
+
+</channel>
+</rss>
