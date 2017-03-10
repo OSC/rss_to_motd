@@ -20,7 +20,7 @@ on Twitter.
 EOF
 
 feed = RSS::Parser.parse(STDIN.read)
-template = ERB.new "<%= item.pubDate.strftime('%Y/%m/%d') %>\n--- <%= item.title %>\n\n<%= item.description %>\n"
+template = ERB.new "<%= item.pubDate.strftime('%Y/%m/%d') %>\n--- <%= item.title.upcase %>\n\n<%= item.description %>\n"
 splitter = "************************************************************************\n"
 
 
