@@ -25,4 +25,5 @@ splitter = "********************************************************************
 
 
 puts welcome
-puts feed.items.map { |item| template.result(binding) }.join(splitter)
+puts feed.items.sort_by { |item| item.pubDate }.map { |item| template.result(binding) }.join(splitter)
+puts splitter
