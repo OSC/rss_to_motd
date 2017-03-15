@@ -1,4 +1,13 @@
-# curl https://www.osc.edu/feeds/known-issues.xml | ruby motd.rb
+#!/usr/bin/env ruby
+
+# Usage:
+#
+# Pipe the content of an RSS feed to motd.rb. The resulting motd file will be
+# output to stdout. Assumes that the RSS feed item descriptions are plain text.
+#
+# curl https://raw.githubusercontent.com/OSC/rss_to_motd/master/motd_rss_example.xml | ruby motd.rb > motd
+#
+# the future motd feed should be at https://www.osc.edu/feeds/motd.xml
 
 require 'rss'
 require 'erb'
