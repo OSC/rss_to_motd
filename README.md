@@ -2,7 +2,7 @@
 
 Example script to convert an rss feed of motd messages into an /etc/motd file
 
-Tested to work with both Ruby 1.8.7 and Ruby 2.0.0 though the tests only run with Ruby 2+ (because of using minitest).
+Tested to work with both Ruby 1.8.7 and Ruby 2.0.0 though the tests only run with Ruby 2+ (because of using minitest). The Rakefile is only necessarily to faciliate running the automated test.
 
 ## Usage
 
